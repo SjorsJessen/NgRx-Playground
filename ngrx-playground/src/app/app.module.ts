@@ -10,6 +10,8 @@ import {MatCardModule} from "@angular/material/card";
 import {CounterComponent} from './features/counter/components/counter.component';
 import {MatButtonModule} from '@angular/material/button';
 import {counterReducer} from "./features/counter/counter.reducer";
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {counterReducer} from "./features/counter/counter.reducer";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
