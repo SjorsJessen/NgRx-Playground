@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
       <mat-grid-tile>
         <app-counter></app-counter>
       </mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+        <app-books-overview></app-books-overview>
+      </mat-grid-tile>
     </mat-grid-list>
     `
 })
