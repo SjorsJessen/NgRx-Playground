@@ -7,7 +7,8 @@ import {Observable} from "rxjs";
   selector: 'app-counter',
   template:
     `
-      <mat-card [style]="{ width: '20vw', margin: '1rem' }">
+      <h2>NgRx Counter</h2>
+      <mat-card>
         <mat-card-header>
           <mat-card-title> Counter</mat-card-title>
           <mat-card-subtitle>{{ count$ | async }}</mat-card-subtitle>
