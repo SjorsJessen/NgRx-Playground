@@ -11,8 +11,7 @@ export const booksCollectionReducer = createReducer(
 
     return [...state, bookId];
   }),
-  //@ts-ignore
-  on(BooksActions.removeBook, (state: ReadonlyArray<string>, { bookId }) => {
-    state.filter((id) => id !== bookId);
-  })
+  on(BooksActions.removeBook, (state, { bookId }) =>
+    state.filter((id) => id !== bookId)
+  )
 )
