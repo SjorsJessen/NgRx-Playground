@@ -7,7 +7,7 @@ import {StoreModule} from '@ngrx/store';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
-import {CounterComponent} from './features/counter/components/counter.component';
+import {CounterComponent} from './features/counter/counter.component';
 import {MatButtonModule} from '@angular/material/button';
 import {counterReducer} from "./features/counter/counter.reducer";
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
