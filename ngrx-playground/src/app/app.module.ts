@@ -14,6 +14,7 @@ import {MaterialUiModule} from "./shared/material-ui.module";
 import {counterReducer} from "./components/counter/counter.reducer";
 import {HttpClientModule} from "@angular/common/http";
 import {BooksModule} from "./components/books/books.module";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {BooksModule} from "./components/books/books.module";
     BrowserAnimationsModule,
     MaterialUiModule,
     BooksModule,
-    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
