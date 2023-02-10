@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Store} from "@ngrx/store";
-import {decrementCounter, incrementCounter, resetCounter} from "../counter.actions";
+import {decrementCounter, incrementCounter, resetCounter} from "./counter.actions";
 import {Observable} from "rxjs";
 
 @Component({
