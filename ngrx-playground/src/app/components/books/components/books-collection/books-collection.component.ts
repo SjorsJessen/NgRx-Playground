@@ -5,13 +5,14 @@ import {Book} from "../../models/books.model";
   template:
     `
       <div class="book-item" *ngFor="let book of books">
-        <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
-        <button (click)="remove.emit(book.id)" data-test="remove-button">Remove from Collection</button>
+        <p>{{ book.volumeInfo.title }}</p>
+        <span> by {{ book.volumeInfo.authors }}</span>
+        <button (click)="remove.emit(book.id)" data-test="remove-button">Remove book</button>
       </div>
     `
 })
 
-export class BooksCollection {
+export class BooksCollectionComponent {
   @Input() books: ReadonlyArray<Book> = [];
   @Output() remove = new EventEmitter<string>();
 }

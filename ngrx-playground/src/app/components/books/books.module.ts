@@ -3,14 +3,14 @@ import {CommonModule} from '@angular/common';
 import {StoreModule} from "@ngrx/store";
 import {booksCollectionReducer} from "./books-collection.reducer";
 import {booksReducer} from "./books.reducer";
-import {BooksOverview} from "./components/books-overview/books-overview";
-import {BooksCollection} from "./components/books-collection/books.collection";
+import {BooksOverviewComponent} from "./components/books-overview/books-overview.component";
+import {BooksCollectionComponent} from "./components/books-collection/books-collection.component";
 import {BooksListComponent} from "./components/books-list/books-list.component";
 
 @NgModule({
   declarations: [
-    BooksOverview,
-    BooksCollection,
+    BooksOverviewComponent,
+    BooksCollectionComponent,
     BooksListComponent
   ],
   imports: [
@@ -19,8 +19,8 @@ import {BooksListComponent} from "./components/books-list/books-list.component";
     StoreModule.forFeature('Books', booksReducer)
   ],
   exports: [
-    BooksOverview,
-    BooksCollection,
+    BooksOverviewComponent,
+    BooksCollectionComponent,
     BooksListComponent
   ]
 })
