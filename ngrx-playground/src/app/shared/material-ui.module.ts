@@ -5,6 +5,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [],
@@ -13,13 +14,15 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule
   ]
 })
 export class MaterialUiModule { }
