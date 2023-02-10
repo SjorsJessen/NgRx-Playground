@@ -5,14 +5,7 @@ import { Component } from '@angular/core';
   template:
     `
     <app-header></app-header>
-    <mat-grid-list cols="2" rowHeight="2:1">
-      <mat-grid-tile>
-        <app-counter></app-counter>
-      </mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
-      <mat-grid-tile></mat-grid-tile>
-    </mat-grid-list>
+    <router-outlet></router-outlet>
     `
 })
 export class AppComponent {
