@@ -14,6 +14,7 @@ import {MaterialUiModule} from "./shared/material-ui.module";
 import {counterReducer} from "./components/counter/counter.reducer";
 import {HttpClientModule} from "@angular/common/http";
 import {BooksModule} from "./components/books/books.module";
+import {CompositionsModule} from "./components/compositions/compositions.module";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {BooksModule} from "./components/books/books.module";
     BrowserAnimationsModule,
     MaterialUiModule,
     BooksModule,
+    CompositionsModule,
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
   ],
   providers: [],
